@@ -1,0 +1,10 @@
+E:\WindownProject\MiniWord_NgoNgocTrungAnh\bin\Debug\MiniWord_NgoNgocTrungAnh.exe.config
+E:\WindownProject\MiniWord_NgoNgocTrungAnh\bin\Debug\MiniWord_NgoNgocTrungAnh.exe
+E:\WindownProject\MiniWord_NgoNgocTrungAnh\bin\Debug\MiniWord_NgoNgocTrungAnh.pdb
+E:\WindownProject\MiniWord_NgoNgocTrungAnh\obj\Debug\MiniWord_NgoNgocTrungAnh.csproj.AssemblyReference.cache
+E:\WindownProject\MiniWord_NgoNgocTrungAnh\obj\Debug\MiniWord_NgoNgocTrungAnh.FormStart.resources
+E:\WindownProject\MiniWord_NgoNgocTrungAnh\obj\Debug\MiniWord_NgoNgocTrungAnh.Properties.Resources.resources
+E:\WindownProject\MiniWord_NgoNgocTrungAnh\obj\Debug\MiniWord_NgoNgocTrungAnh.csproj.GenerateResource.cache
+E:\WindownProject\MiniWord_NgoNgocTrungAnh\obj\Debug\MiniWord_NgoNgocTrungAnh.csproj.CoreCompileInputs.cache
+E:\WindownProject\MiniWord_NgoNgocTrungAnh\obj\Debug\MiniWord_NgoNgocTrungAnh.exe
+E:\WindownProject\MiniWord_NgoNgocTrungAnh\obj\Debug\MiniWord_NgoNgocTrungAnh.pdb

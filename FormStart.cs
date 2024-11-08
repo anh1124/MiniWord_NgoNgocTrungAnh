@@ -391,10 +391,50 @@ namespace MiniWord_NgoNgocTrungAnh
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Xóa nội dung của RichTextBox để tạo một tài liệu mới
-            richTextBox1.Clear();
-            Text = "New Document"; // Cập nhật tiêu đề form
+            // Kiểm tra xem nội dung của RichTextBox có thay đổi chưa
+            if (!string.IsNullOrEmpty(richTextBox1.Text))
+            {
+                // Hỏi người dùng nếu họ có muốn lưu tài liệu trước khi tạo tài liệu mới
+                var result = MessageBox.Show("Do you want to save the current document?", 
+                    "Save Document", 
+                    MessageBoxButtons.YesNoCancel, 
+                    MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    // Nếu người dùng chọn "Yes", gọi hàm lưu (bạn có thể tạo một phương thức lưu)
+                    SaveDocument();
+                }
+                else if (result == DialogResult.No)
+                {
+                    // Nếu người dùng chọn "No", bỏ qua và xóa nội dung
+                    richTextBox1.Clear();
+                    Text = "New Document"; // Cập nhật tiêu đề form
+                }
+                // Nếu chọn "Cancel", không làm gì cả (giữ nguyên tài liệu hiện tại)
+            }
+            else
+            {
+                // Nếu không có nội dung trong RichTextBox, chỉ cần xóa
+                richTextBox1.Clear();
+                Text = "New Document"; // Cập nhật tiêu đề form
+            }
         }
+
+        private void SaveDocument()
+        {
+            // Đoạn mã lưu tài liệu, ví dụ như lưu vào file
+            // Sử dụng SaveFileDialog để chọn đường dẫn và lưu tệp
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // Lưu nội dung của RichTextBox vào file
+                System.IO.File.WriteAllText(saveFileDialog.FileName, richTextBox1.Text);
+                MessageBox.Show("Document saved successfully.");
+            }
+        }
+
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -898,5 +938,24 @@ namespace MiniWord_NgoNgocTrungAnh
         }
 
         #endregion
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+                using (OpenFileDialog openFileDialog = new OpenFileDialog())
+                {
+                    openFileDialog.Filter = "Image Files (.bmp;.jpg;*.jpeg;*.png;*.gif)|*.bmp;*.jpg;*.jpeg;*.png;*.gif";
+
+                    if (openFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        string imagePath = openFileDialog.FileName;
+                        Image image = Image.FromFile(imagePath);
+
+                        Clipboard.SetImage(image);
+                        richTextBox1.Paste();
+                    }
+                }
+            
+        }
     }
 }

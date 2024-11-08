@@ -70,6 +70,7 @@ namespace MiniWord_NgoNgocTrungAnh
             this.btnPaste = new System.Windows.Forms.Button();
             this.eventLog1 = new System.Diagnostics.EventLog();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTabSpace)).BeginInit();
@@ -184,6 +185,7 @@ namespace MiniWord_NgoNgocTrungAnh
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnAddTable);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.numericUpDownTabSpace);
@@ -260,9 +262,9 @@ namespace MiniWord_NgoNgocTrungAnh
             // iconBtn
             // 
             this.iconBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconBtn.Location = new System.Drawing.Point(980, 23);
+            this.iconBtn.Location = new System.Drawing.Point(971, -2);
             this.iconBtn.Name = "iconBtn";
-            this.iconBtn.Size = new System.Drawing.Size(56, 53);
+            this.iconBtn.Size = new System.Drawing.Size(65, 53);
             this.iconBtn.TabIndex = 22;
             this.iconBtn.Text = "☹";
             this.iconBtn.UseVisualStyleBackColor = true;
@@ -272,7 +274,7 @@ namespace MiniWord_NgoNgocTrungAnh
             // 
             this.btnReplace.Location = new System.Drawing.Point(898, 53);
             this.btnReplace.Name = "btnReplace";
-            this.btnReplace.Size = new System.Drawing.Size(75, 23);
+            this.btnReplace.Size = new System.Drawing.Size(67, 23);
             this.btnReplace.TabIndex = 21;
             this.btnReplace.Text = "Replace";
             this.btnReplace.UseVisualStyleBackColor = true;
@@ -289,7 +291,7 @@ namespace MiniWord_NgoNgocTrungAnh
             // 
             this.btnSearch.Location = new System.Drawing.Point(898, 23);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.Size = new System.Drawing.Size(67, 23);
             this.btnSearch.TabIndex = 19;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -499,6 +501,17 @@ namespace MiniWord_NgoNgocTrungAnh
             // 
             this.eventLog1.SynchronizingObject = this;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(971, 52);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(65, 53);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "add image";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -563,6 +576,7 @@ namespace MiniWord_NgoNgocTrungAnh
         private Label label2;
         private NumericUpDown numericUpDownTabSpace;
         private Button btnAddTable;
+        private Button button1;
     }
 }
 

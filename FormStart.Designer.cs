@@ -46,6 +46,13 @@ namespace MiniWord_NgoNgocTrungAnh
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAddTable = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.numericUpDownTabSpace = new System.Windows.Forms.NumericUpDown();
+            this.iconBtn = new System.Windows.Forms.Button();
+            this.btnReplace = new System.Windows.Forms.Button();
+            this.searchTextBox = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.comboBoxFontFamily = new System.Windows.Forms.ComboBox();
             this.checkBoxUnderline = new System.Windows.Forms.CheckBox();
             this.checkBoxItalic = new System.Windows.Forms.CheckBox();
@@ -63,11 +70,9 @@ namespace MiniWord_NgoNgocTrungAnh
             this.btnPaste = new System.Windows.Forms.Button();
             this.eventLog1 = new System.Diagnostics.EventLog();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.searchTextBox = new System.Windows.Forms.TextBox();
-            this.btnReplace = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTabSpace)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
             this.SuspendLayout();
@@ -179,6 +184,10 @@ namespace MiniWord_NgoNgocTrungAnh
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnAddTable);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.numericUpDownTabSpace);
+            this.panel1.Controls.Add(this.iconBtn);
             this.panel1.Controls.Add(this.btnReplace);
             this.panel1.Controls.Add(this.searchTextBox);
             this.panel1.Controls.Add(this.btnSearch);
@@ -202,6 +211,89 @@ namespace MiniWord_NgoNgocTrungAnh
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1039, 100);
             this.panel1.TabIndex = 2;
+            // 
+            // btnAddTable
+            // 
+            this.btnAddTable.Image = global::MiniWord_NgoNgocTrungAnh.Properties.Resources.table;
+            this.btnAddTable.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnAddTable.Location = new System.Drawing.Point(3, 0);
+            this.btnAddTable.Name = "btnAddTable";
+            this.btnAddTable.Size = new System.Drawing.Size(83, 100);
+            this.btnAddTable.TabIndex = 25;
+            this.btnAddTable.Text = "AddTable";
+            this.btnAddTable.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddTable.UseVisualStyleBackColor = true;
+            this.btnAddTable.Visible = false;
+            this.btnAddTable.Click += new System.EventHandler(this.btnAddTable_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(613, 56);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(73, 16);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Tab space";
+            // 
+            // numericUpDownTabSpace
+            // 
+            this.numericUpDownTabSpace.Location = new System.Drawing.Point(612, 75);
+            this.numericUpDownTabSpace.Maximum = new decimal(new int[] {
+            72,
+            0,
+            0,
+            0});
+            this.numericUpDownTabSpace.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownTabSpace.Name = "numericUpDownTabSpace";
+            this.numericUpDownTabSpace.Size = new System.Drawing.Size(120, 22);
+            this.numericUpDownTabSpace.TabIndex = 23;
+            this.numericUpDownTabSpace.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            // 
+            // iconBtn
+            // 
+            this.iconBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconBtn.Location = new System.Drawing.Point(980, 23);
+            this.iconBtn.Name = "iconBtn";
+            this.iconBtn.Size = new System.Drawing.Size(56, 53);
+            this.iconBtn.TabIndex = 22;
+            this.iconBtn.Text = "☹";
+            this.iconBtn.UseVisualStyleBackColor = true;
+            this.iconBtn.Click += new System.EventHandler(this.iconBtn_Click);
+            // 
+            // btnReplace
+            // 
+            this.btnReplace.Location = new System.Drawing.Point(898, 53);
+            this.btnReplace.Name = "btnReplace";
+            this.btnReplace.Size = new System.Drawing.Size(75, 23);
+            this.btnReplace.TabIndex = 21;
+            this.btnReplace.Text = "Replace";
+            this.btnReplace.UseVisualStyleBackColor = true;
+            this.btnReplace.Click += new System.EventHandler(this.btnReplace_Click);
+            // 
+            // searchTextBox
+            // 
+            this.searchTextBox.Location = new System.Drawing.Point(612, 23);
+            this.searchTextBox.Name = "searchTextBox";
+            this.searchTextBox.Size = new System.Drawing.Size(280, 22);
+            this.searchTextBox.TabIndex = 20;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(898, 23);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 19;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // comboBoxFontFamily
             // 
@@ -407,33 +499,6 @@ namespace MiniWord_NgoNgocTrungAnh
             // 
             this.eventLog1.SynchronizingObject = this;
             // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(898, 23);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch.TabIndex = 19;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // searchTextBox
-            // 
-            this.searchTextBox.Location = new System.Drawing.Point(612, 23);
-            this.searchTextBox.Name = "searchTextBox";
-            this.searchTextBox.Size = new System.Drawing.Size(280, 22);
-            this.searchTextBox.TabIndex = 20;
-            // 
-            // btnReplace
-            // 
-            this.btnReplace.Location = new System.Drawing.Point(898, 53);
-            this.btnReplace.Name = "btnReplace";
-            this.btnReplace.Size = new System.Drawing.Size(75, 23);
-            this.btnReplace.TabIndex = 21;
-            this.btnReplace.Text = "Replace";
-            this.btnReplace.UseVisualStyleBackColor = true;
-            this.btnReplace.Click += new System.EventHandler(this.btnReplace_Click);
-            // 
             // FormStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -449,6 +514,7 @@ namespace MiniWord_NgoNgocTrungAnh
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTabSpace)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();
             this.ResumeLayout(false);
@@ -493,6 +559,10 @@ namespace MiniWord_NgoNgocTrungAnh
         private Button btnReplace;
         private TextBox searchTextBox;
         private Button btnSearch;
+        private Button iconBtn;
+        private Label label2;
+        private NumericUpDown numericUpDownTabSpace;
+        private Button btnAddTable;
     }
 }
 

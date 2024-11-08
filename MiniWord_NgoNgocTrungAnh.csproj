@@ -45,6 +45,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsInput, Version=1.0.4.0, Culture=neutral, PublicKeyToken=9b287f7dc5073cad, processorArchitecture=MSIL">
+      <HintPath>packages\InputSimulator.1.0.4.0\lib\net20\WindowsInput.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FormStart.cs">
@@ -52,6 +55,12 @@
     </Compile>
     <Compile Include="FormStart.Designer.cs">
       <DependentUpon>FormStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IconPickerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IconPickerForm.Designer.cs">
+      <DependentUpon>IconPickerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -68,6 +77,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -87,6 +97,7 @@
     <Content Include="Resources\redo.png" />
     <Content Include="Resources\save.png" />
     <Content Include="Resources\paste.png" />
+    <Content Include="Resources\table.png" />
     <Content Include="Resources\undo.png" />
     <Content Include="Resources\wordbgcolor.png" />
     <Content Include="Resources\wordcolor.png" />

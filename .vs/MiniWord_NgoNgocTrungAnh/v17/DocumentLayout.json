@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{AEC86604-C86E-4976-8E4D-13CCFE565D90}|MiniWord_NgoNgocTrungAnh.csproj|solutionrelative:formstart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AEC86604-C86E-4976-8E4D-13CCFE565D90}|MiniWord_NgoNgocTrungAnh.csproj|E:\\WindownProject\\MiniWord_NgoNgocTrungAnh\\formstart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AEC86604-C86E-4976-8E4D-13CCFE565D90}|MiniWord_NgoNgocTrungAnh.csproj|solutionrelative:formstart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AEC86604-C86E-4976-8E4D-13CCFE565D90}|MiniWord_NgoNgocTrungAnh.csproj|E:\\WindownProject\\MiniWord_NgoNgocTrungAnh\\formstart.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AEC86604-C86E-4976-8E4D-13CCFE565D90}|MiniWord_NgoNgocTrungAnh.csproj|solutionrelative:formstart.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEC86604-C86E-4976-8E4D-13CCFE565D90}|MiniWord_NgoNgocTrungAnh.csproj|E:\\WindownProject\\MiniWord_NgoNgocTrungAnh\\formstart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AEC86604-C86E-4976-8E4D-13CCFE565D90}|MiniWord_NgoNgocTrungAnh.csproj|solutionrelative:formstart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AEC86604-C86E-4976-8E4D-13CCFE565D90}|MiniWord_NgoNgocTrungAnh.csproj|e:\\windownproject\\miniword_ngongoctrunganh\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEC86604-C86E-4976-8E4D-13CCFE565D90}|MiniWord_NgoNgocTrungAnh.csproj|solutionrelative:properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +34,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "FormStart.cs",
+              "DocumentMoniker": "E:\\WindownProject\\MiniWord_NgoNgocTrungAnh\\FormStart.cs",
+              "RelativeDocumentMoniker": "FormStart.cs",
+              "ToolTip": "E:\\WindownProject\\MiniWord_NgoNgocTrungAnh\\FormStart.cs",
+              "RelativeToolTip": "FormStart.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAewCcAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T14:07:45.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Resources.Designer.cs",
+              "DocumentMoniker": "E:\\WindownProject\\MiniWord_NgoNgocTrungAnh\\Properties\\Resources.Designer.cs",
+              "RelativeDocumentMoniker": "Properties\\Resources.Designer.cs",
+              "ToolTip": "E:\\WindownProject\\MiniWord_NgoNgocTrungAnh\\Properties\\Resources.Designer.cs",
+              "RelativeToolTip": "Properties\\Resources.Designer.cs",
+              "ViewState": "AQIAAJUAAAAAAAAAAAAawKsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T07:24:36.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "FormStart.cs [Design]",
               "DocumentMoniker": "E:\\WindownProject\\MiniWord_NgoNgocTrungAnh\\FormStart.cs",
               "RelativeDocumentMoniker": "FormStart.cs",
@@ -42,28 +72,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormStart.cs",
-              "DocumentMoniker": "E:\\WindownProject\\MiniWord_NgoNgocTrungAnh\\FormStart.cs",
-              "RelativeDocumentMoniker": "FormStart.cs",
-              "ToolTip": "E:\\WindownProject\\MiniWord_NgoNgocTrungAnh\\FormStart.cs",
-              "RelativeToolTip": "FormStart.cs",
-              "ViewState": "AQIAADUBAAAAAAAAAAASwDsBAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T14:07:45.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FormStart.Designer.cs",
               "DocumentMoniker": "E:\\WindownProject\\MiniWord_NgoNgocTrungAnh\\FormStart.Designer.cs",
               "RelativeDocumentMoniker": "FormStart.Designer.cs",
               "ToolTip": "E:\\WindownProject\\MiniWord_NgoNgocTrungAnh\\FormStart.Designer.cs",
               "RelativeToolTip": "FormStart.Designer.cs",
-              "ViewState": "AQIAAJ4BAAAAAAAAAAAawLIBAABSAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQCAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T14:15:36.161Z",
+              "WhenOpened": "2024-11-08T07:05:43.445Z",
               "EditorCaption": ""
             }
           ]
